@@ -1,4 +1,181 @@
+:root {
+    --color-fondo: #141414;
+    --color-secundario: #1f1f1f;
+    --color-acento: #e50914; 
+    --color-texto-principal: #ffffff;
+    --color-texto-secundario: #b3b3b3;
+    --color-borde: #333333;
+    --ancho-pelicula: 180px; 
+    --radio-tarjeta: 8px;
+    --transicion: 0.3s ease;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;[cite: 1]
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.encabezado-principal {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.lista-navegacion {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item-navegacion {
+    color: var(--color-texto-secundario);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.item-navegacion:hover {
+    color: var(--color-acento);
+}
+
+.contenedor-principal {
+    padding: 40px 0;
+}
+
+.seccion-genero {
+    margin-bottom: 50px;
+    padding: 0 5%;
+}
+
+.titulo-genero {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--color-acento);
+    padding-left: 15px;
+}
+
+.cuadricula-peliculas {
+    display: flex;[cite: 1]
+    overflow-x: auto;[cite: 1]
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.cuadricula-peliculas::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cuadricula-peliculas::-webkit-scrollbar-thumb {
+    background: var(--color-borde);
+    border-radius: 10px;
+}
+
+.tarjeta-pelicula {
+    flex: 0 0 var(--ancho-pelicula);[cite: 1]
+    background-color: var(--color-secundario);
+    border-radius: var(--radio-tarjeta);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform var(--transicion);[cite: 1]
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.tarjeta-pelicula:hover {
+    transform: scale(1.05);[cite: 1]
+    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2);
+}
+
+.portada-pelicula {
+    width: 100%;
+    aspect-ratio: 2 / 3;[cite: 1]
+    background-color: #2a2a2a;
+    display: block;
+}
+
+.titulo-pelicula {
+    padding: 12px;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pie-pagina {
+    background-color: #000;
+    padding: 60px 5% 30px;
+    margin-top: 50px;
+    border-top: 2px solid var(--color-acento);
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.columna-footer {
+    flex: 1;
+    min-width: 200px;
+}
+
+.columna-footer h3 {
+    color: var(--color-acento);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.columna-footer ul {
+    list-style: none;
+}
+
+.columna-footer li, .columna-footer p {
+    color: var(--color-texto-secundario);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+.icono-red {
+    color: var(--color-texto-principal);
+    text-decoration: none;
+    border: 1px solid var(--color-borde);
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: var(--transicion);
+}
+
+.icono-red:hover {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+}
+
+.derechos-autor {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-borde);
+    color: #555;
+    font-size: 0.8rem;
 }
