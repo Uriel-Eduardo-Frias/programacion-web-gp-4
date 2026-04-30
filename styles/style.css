@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;[cite: 1]
+    box-sizing: border-box;
 }
 
 body {
@@ -68,8 +68,8 @@ body {
 }
 
 .cuadricula-peliculas {
-    display: flex;[cite: 1]
-    overflow-x: auto;[cite: 1]
+    display: flex;
+    overflow-x: auto;
     gap: 20px;
     padding: 20px 0;
     scroll-behavior: smooth;
@@ -85,23 +85,22 @@ body {
 }
 
 .tarjeta-pelicula {
-    flex: 0 0 var(--ancho-pelicula);[cite: 1]
+    flex: 0 0 var(--ancho-pelicula);
     background-color: var(--color-secundario);
     border-radius: var(--radio-tarjeta);
     overflow: hidden;
     cursor: pointer;
-    transition: transform var(--transicion);[cite: 1]
+    transition: transform var(--transicion);
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .tarjeta-pelicula:hover {
-    transform: scale(1.05);[cite: 1]
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2);
 }
 
 .portada-pelicula {
     width: 100%;
-    aspect-ratio: 2 / 3;[cite: 1]
     background-color: #2a2a2a;
     display: block;
 }
