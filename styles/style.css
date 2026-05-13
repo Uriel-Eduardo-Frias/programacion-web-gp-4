@@ -1,7 +1,7 @@
 :root {
-    --color-fondo: #141414;
-    --color-secundario: #1f1f1f;
-    --color-acento: #e50914; 
+    --color-fondo: #0B0E14;
+    --color-secundario: #1A1D23;
+    --color-acento: #e50914; /*#00F2FF*/
     --color-texto-principal: #ffffff;
     --color-texto-secundario: #b3b3b3;
     --color-borde: #333333;
@@ -64,12 +64,26 @@ body {
 
 .btn-registrar, 
 .btn-loguear {
-    padding: 0.5em 1em;
+    /* padding: 0.5em 1em;
     border-radius: 0.25em;
     font-weight: bold;
     cursor: pointer;
     font-size: 0.9rem;
     transition: var(--transicion);
+    text-decoration: none;
+    text-align: justify;*/
+
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-size: 0.rem;
+    text-decoration: none;
+    text-align: center;
+    cursor:pointer; 
+    transition: var(--transicion);
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 0.25em;
 }
 
 .btn-registrar {
