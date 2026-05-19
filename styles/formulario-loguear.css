@@ -5,7 +5,7 @@
     --color-texto-principal: #ffffff;
     --color-texto-secundario: #b3b3b3;
     --color-borde: #333333;
-    --trancision: 0.3s ease;
+    --transicion: 0.3s ease;
 }
 
 * {
@@ -144,7 +144,7 @@ body {
     text-decoration: underline;
 }
 
-/*------- FOOTER -------*/
+
 
 .pie-pagina {
     background-color: #000;

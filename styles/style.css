@@ -67,7 +67,36 @@ body {
     transform: scale(1.1);
     border-bottom: 2px solid var(--color-texto-secundario);
 }
+.contenedor-buscador {
+    display: flex;
+    align-items: center;
+    border: 1px solid white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 2px 5px;
+}
 
+.buscador {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    outline: none; 
+}
+
+
+.buscador::placeholder {
+    color: lightgray;
+}
+
+
+.btn-buscar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    padding: 0 5px;
+}
 .btn-registrar, 
 .btn-loguear {
     display: inline-block;
