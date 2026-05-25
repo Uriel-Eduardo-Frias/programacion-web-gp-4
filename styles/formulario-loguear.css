@@ -16,21 +16,8 @@
 }
 
 body {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background-color: var(--color-fondo);
-    background: url(https://i1-e.pinimg.com/736x/f9/ed/93/f9ed9356d59c7d12426e6e0d4f3246aa.jpg);
-    background-size: cover;
-    background-position: center;
-    */
-
-    min-height: 100vh;
-    background-color: var(--color-fondo);
-    background: url(https://i1-e.pinimg.com/736x/f9/ed/93/f9ed9356d59c7d12426e6e0d4f3246aa.jpg);
-    background-size: cover;
-    background-position: center;
 
     display: flex;
     flex-direction: column;
