@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .contenedor-registro {
     display: flex;
     justify-content: center;
@@ -9,7 +11,6 @@
     min-height: 100vh;
     padding: 20px; 
 }
-
 
 .card-registro {
     background-color: var(--color-secundario);
@@ -28,14 +29,15 @@
     font-weight: 600;
 }
 
-
-.input-box {
+.campo-formulario {
+    display: block;
     margin-bottom: 20px;
 }
 
-.input-box input[type="text"],
-.input-box input[type="email"],
-.input-box input[type="password"] {
+.campo-formulario input[type="text"],
+.campo-formulario input[type="email"],
+.campo-formulario input[type="password"],
+.campo-formulario input[type="tel"] {
     width: 100%;
     padding: 14px 16px;
     background-color: var(--color-fondo);
@@ -47,15 +49,13 @@
     transition: border-color var(--transicion);
 }
 
-.input-box input::placeholder {
+.campo-formulario input::placeholder {
     color: var(--color-texto-secundario);
 }
 
-
-.input-box input:focus {
+.campo-formulario input:focus {
     border-color: var(--color-acento);
 }
-
 
 .terminos-condiciones {
     margin-bottom: 25px;
@@ -75,7 +75,6 @@
     accent-color: var(--color-acento); 
 }
 
-
 .btn {
     width: 100%;
     padding: 14px;
@@ -93,7 +92,6 @@
     background-color: #b80710; 
     transform: translateY(-2px); 
 }
-
 
 .link-redireccion {
     text-align: center;
