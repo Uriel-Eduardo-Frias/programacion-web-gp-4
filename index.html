@@ -42,120 +42,429 @@
     </section>
 
 </header>
-    <main class="contenedor-principal">
+   <main class="contenedor-principal">
 
-        <section class="seccion-genero">
-            <h2 class="titulo-genero">Terror</h2>
-            <div class="cuadricula-peliculas">
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula"
-                        src="img/peliculas/terror/Anaconda2025.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula"
-                        src="img/peliculas/terror/it2017.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula"
-                        src="img/peliculas/terror/posesion-infernal.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula"
-                        src="img/peliculas/terror/alien-romulus.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula"
-                        src="img/peliculas/terror/el-resplandor.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula"
-                        src="img/peliculas/terror/guerra-mundial-z.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/terror/un-lugar-en-silencio.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
+    <section class="seccion-genero">
+        <h2 class="titulo-genero">Terror</h2>
+        <div class="cuadricula-peliculas">
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-anaconda" class="favorito-checkbox">
+                <label for="fav-anaconda" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/Anaconda2025.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-anaconda" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-it" class="favorito-checkbox">
+                <label for="fav-it" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/it2017.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-it" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-posesion" class="favorito-checkbox">
+                <label for="fav-posesion" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/posesion-infernal.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-posesion" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-alien" class="favorito-checkbox">
+                <label for="fav-alien" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/alien-romulus.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-alien" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-resplandor" class="favorito-checkbox">
+                <label for="fav-resplandor" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/el-resplandor.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-resplandor" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-guerra" class="favorito-checkbox">
+                <label for="fav-guerra" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/guerra-mundial-z.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-guerra" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-silencio" class="favorito-checkbox">
+                <label for="fav-silencio" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/terror/un-lugar-en-silencio.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-silencio" class="btn-detalles">Detalles</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="seccion-genero">
+        <h2 class="titulo-genero">Acción</h2>
+        <div class="cuadricula-peliculas">
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-mortal" class="favorito-checkbox">
+                <label for="fav-mortal" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/mortal-kombat2.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-mortal" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-avengers" class="favorito-checkbox">
+                <label for="fav-avengers" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/avengers-infinity-war.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-avengers" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-depredador" class="favorito-checkbox">
+                <label for="fav-depredador" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/depredador-tierras-salvajes.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-depredador" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-matrix" class="favorito-checkbox">
+                <label for="fav-matrix" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/matrix.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-matrix" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-ironman" class="favorito-checkbox">
+                <label for="fav-ironman" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/iron-man2.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-ironman" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-johnwick" class="favorito-checkbox">
+                <label for="fav-johnwick" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/john-wick4.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-johnwick" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-troya" class="favorito-checkbox">
+                <label for="fav-troya" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/peliculas/accion/troya.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-troya" class="btn-detalles">Detalles</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="seccion-genero">
+        <h2 class="titulo-genero">Series</h2>
+        <div class="cuadricula-peliculas">
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-demon" class="favorito-checkbox">
+                <label for="fav-demon" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/demon-slayer.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-demon" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-invencible" class="favorito-checkbox">
+                <label for="fav-invencible" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/invencible.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-invencible" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-tronos" class="favorito-checkbox">
+                <label for="fav-tronos" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/juego-de-tronos.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-tronos" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-stranger" class="favorito-checkbox">
+                <label for="fav-stranger" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/stranger-things.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-stranger" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-simpson" class="favorito-checkbox">
+                <label for="fav-simpson" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/los-simpson.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-simpson" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-naruto" class="favorito-checkbox">
+                <label for="fav-naruto" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/naruto.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-naruto" class="btn-detalles">Detalles</a>
+            </article>
+            <article class="tarjeta-pelicula">
+                <input type="checkbox" id="fav-fallout" class="favorito-checkbox">
+                <label for="fav-fallout" class="btn-favorito">&hearts;</label>
+                <img class="portada-pelicula" src="img/series/fallout.webp">
+                <h2 class="titulo-pelicula">Título de la Película</h2>
+                <a href="#modal-fallout" class="btn-detalles">Detalles</a>
+            </article>
+        </div>
+    </section>
+
+    <div id="modal-anaconda" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/Anaconda2025.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Anaconda</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
             </div>
-        </section>
-
-
-        <section class="seccion-genero">
-            <h2 class="titulo-genero">Acción</h2>
-            <div class="cuadricula-peliculas">
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/mortal-kombat2.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/avengers-infinity-war.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/depredador-tierras-salvajes.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/matrix.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/iron-man2.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/john-wick4.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/peliculas/accion/troya.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
+        </div>
+    </div>
+    <div id="modal-it" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/it2017.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>It (2017)</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
             </div>
-        </section>
-
-
-        <section class="seccion-genero">
-            <h2 class="titulo-genero">Series</h2>
-            <div class="cuadricula-peliculas">
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/demon-slayer.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/invencible.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/juego-de-tronos.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/stranger-things.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/los-simpson.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/naruto.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
-                <article class="tarjeta-pelicula">
-                    <img class="portada-pelicula" src="img/series/fallout.webp">
-                    <h2 class="titulo-pelicula">Título de la Película</h2>
-                </article>
+        </div>
+    </div>
+    <div id="modal-posesion" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/posesion-infernal.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Posesión Infernal</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <div id="modal-alien" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/alien-romulus.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Alien: Romulus</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-resplandor" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/el-resplandor.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>El Resplandor</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-guerra" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/guerra-mundial-z.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Guerra Mundial Z</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-silencio" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/terror/un-lugar-en-silencio.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Un Lugar en Silencio</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </main>
+    <div id="modal-mortal" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/mortal-kombat2.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Mortal Kombat 2</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-avengers" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/avengers-infinity-war.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Avengers: Infinity War</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-depredador" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/depredador-tierras-salvajes.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Depredador</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-matrix" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/matrix.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Matrix</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-ironman" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/iron-man2.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Iron Man 2</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-johnwick" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/john-wick4.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>John Wick 4</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-troya" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/peliculas/accion/troya.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Troya</h2>
+                    <p>Aquí va la descripción de la película.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="modal-demon" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/demon-slayer.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Demon Slayer</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-invencible" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/invencible.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Invencible</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-tronos" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/juego-de-tronos.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Juego de Tronos</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-stranger" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/stranger-things.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Stranger Things</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-simpson" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/los-simpson.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Los Simpson</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-naruto" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/naruto.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Naruto</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-fallout" class="modal-pelicula">
+        <div class="modal-contenido">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="modal-cuerpo">
+                <img src="img/series/fallout.webp" class="modal-imagen">
+                <div class="modal-detalles">
+                    <h2>Fallout</h2>
+                    <p>Aquí va la descripción de la serie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
 
 
 

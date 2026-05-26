@@ -1,3 +1,4 @@
+
 :root {
     --color-fondo: #0B0E14;
     --color-secundario: #1A1D23;
@@ -100,27 +101,30 @@ body {
 }
 
 .btn-registrar, 
-.btn-loguear {
+.btn-loguear,
+.btn-cerrar-sesion {
     display: inline-block;
     padding: 0.5em 1em;
     font-weight: bold;
-    font-size: 0.rem;
+    font-size: 0.9rem;
     text-decoration: none;
     text-align: center;
-    cursor:pointer; 
+    cursor: pointer; 
     transition: var(--transicion);
     width: 150px;
     box-sizing: border-box;
     border-radius: 0.25em;
 }
 
-.btn-registrar {
+.btn-registrar,
+.btn-cerrar-sesion {
     background-color: var(--color-acento);
     color: var(--color-texto-principal);
     border: none;
 }
 
-.btn-registrar:hover {
+.btn-registrar:hover,
+.btn-cerrar-sesion:hover {
     background-color: #f40612;
 }
 
@@ -135,10 +139,18 @@ body {
     color: var(--color-texto-principal);
 }
 
-.btn-loguear:hover, .btn-registrar:hover {
+.btn-loguear:hover, 
+.btn-registrar:hover,
+.btn-cerrar-sesion:hover {
     transform: scale(1.1);
 }
-
+.perfil-user .icono-user {
+    width: 35px;
+    height: 35px;
+    border-radius: 0.25em;
+    cursor: pointer;
+    display: block;
+}
 
 .contenedor-principal {
     padding: 40px 0;
